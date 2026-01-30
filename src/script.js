@@ -17,6 +17,7 @@ const I_intervale = setInterval(() => {
     O_result.innerText = A_TableauRandom[I_compteur].toString();
     const O_message = document.createElement('p');
     O_message.id = "message";
+    O_message.role = "alert";
     O_result.classList.remove("bleu", "vert", "orange", "rouge");
 
     if (A_TableauRandom[I_compteur] <= 0) {
@@ -39,4 +40,4 @@ const I_intervale = setInterval(() => {
     }
 
     if (I_compteur >= A_TableauRandom.length - 1) clearInterval(I_intervale)
-}, 2000);
+}, 4000);
